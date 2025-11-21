@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- page setup -->
+    <meta charset="UTF-8">
+    <title>Edit Plan - TravelPlanner</title>
+
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header>
+        <div class="logo">
+            <h1>Travel<span>Planner</span></h1> <!-- website title -->
+        </div>
+
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li> <!-- go to homepage -->
+                <li><a href="create.html">Create Plan</a></li> <!-- go to create page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main page content -->
+    <main>
+        <section class="edit-section">
+
+            <!-- page heading -->
+            <h2>Edit Travel Plan</h2>
+
+            <!-- edit plan form -->
+            <form id="editPlanForm" class="plan-form">
+
+                <!-- hidden id used to update correct note -->
+                <input type="hidden" id="editNoteId">
+
+                <!-- edit plan title  -->
+                <div class="form-group">
+                    <label for="editPlanTitle">Plan Title:</label>
+                    <input type="text" id="editPlanTitle" name="editPlanTitle" required>
+                </div>
+
+                <!-- edit destination dropdown -->
+                <div class="form-group">
+                    <label for="editPlanTitle">Plan Title:</label>
+                    <input type="text" id="editPlanTitle" name="editPlanTitle" required>
+                </div>
+
+                <!-- edit content input  -->
+                <div class="form-group">
+                    <label for="editNoteContent">Note Content:</label>
+                    <textarea id="editNoteContent" name="editNoteContent" rows="10" required></textarea>
+                </div>
+
+                <!-- update + cancel buttons -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Update Note</button> <!-- save updated note -->
+                    <a href="index.html" class="btn-secondary">Cancel</a> <!-- go back without saving -->
+                </div>
+
+            </form> 
+
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+        <p>StudyNotes Team</p>
+    </footer>
+
+    <!--  javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>

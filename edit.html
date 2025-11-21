@@ -1,79 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- page setup -->
+    <!-- page setup + responsive sizing -->
     <meta charset="UTF-8">
+
     <title>Edit Plan - TravelPlanner</title>
 
-    <!-- linking stylesheet -->
+    <!-- linking css stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- header section -->
+    <!-- header section for logo + navigation bar -->
     <header>
         <div class="logo">
-            <h1>Travel<span>Planner</span></h1> <!-- website title -->
+            <h1>Travel<span>Planner</span></h1> <!-- website title with highlight -->
         </div>
 
-        <!-- navigation bar -->
+        <!-- navigation bar links -->
         <nav>
             <ul>
-                <li><a href="index.html">Dashboard</a></li> <!-- go to homepage -->
+                <li><a href="index.html">Dashboard</a></li> <!-- go back to homepage -->
                 <li><a href="create.html">Create Plan</a></li> <!-- go to create page -->
+                <li><a href="edit.html" class="active">Edit Plan</a></li> <!-- current page -->
             </ul>
         </nav>
     </header>
 
-    <!-- main page content -->
+    <!-- main content section -->
     <main>
         <section class="edit-section">
 
-            <!-- page heading -->
-            <h2>Edit Travel Plan</h2>
+            <!-- page heading for edit plan -->
+            <h2>Edit Plan</h2>
 
-            <!-- edit plan form -->
-            <form id="editPlanForm" class="plan-form">
+            <!-- edit plan form container -->
+            <form id="editPlanForm" class="note-form">
 
-                <!-- hidden id used to update correct note -->
-                <input type="hidden" id="editNoteId">
-
-                <!-- edit plan title  -->
+                <!-- plan title input section -->
                 <div class="form-group">
                     <label for="editPlanTitle">Plan Title:</label>
-                    <input type="text" id="editPlanTitle" name="editPlanTitle" required>
+                    <input type="text" id="editPlanTitle" name="editPlanTitle" required placeholder="Enter plan title">
                 </div>
 
-                <!-- edit destination dropdown -->
+                <!-- destination input section -->
                 <div class="form-group">
-                    <label for="editPlanTitle">Plan Title:</label>
-                    <input type="text" id="editPlanTitle" name="editPlanTitle" required>
+                    <label for="editPlanDestination">Destination:</label>
+                    <input type="text" id="editPlanDestination" name="editPlanDestination" required placeholder="Enter destination">
                 </div>
 
-                <!-- edit content input  -->
+                <!-- main content text area -->
                 <div class="form-group">
-                    <label for="editNoteContent">Note Content:</label>
-                    <textarea id="editNoteContent" name="editNoteContent" rows="10" required></textarea>
+                    <label for="editPlanContent">Plan Content:</label>
+                    <textarea id="editPlanContent" name="editPlanContent" rows="10" required placeholder="Enter your travel plan details here..."></textarea>
                 </div>
 
-                <!-- update + cancel buttons -->
+                <!-- save + cancel buttons -->
                 <div class="form-actions">
-                    <button type="submit" class="btn-primary">Update Note</button> <!-- save updated note -->
-                    <a href="index.html" class="btn-secondary">Cancel</a> <!-- go back without saving -->
+                    <button type="submit" class="btn-primary">Save Changes</button> <!-- save plan btn -->
+                    <a href="index.html" class="btn-secondary">Cancel</a> <!-- cancel btn -->
                 </div>
-
-            </form> 
-
+            </form>
         </section>
     </main>
 
-    <!-- footer  -->
+    <!-- footer -->
     <footer>
-        <p>StudyNotes Team</p>
+        <p> TravelPlanner Team</p>
     </footer>
 
-    <!--  javascript file -->
+    <!-- javascript file -->
     <script src="script.js"></script>
 </body>
 </html>
